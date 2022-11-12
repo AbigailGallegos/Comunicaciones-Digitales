@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{pdflscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{anysize} 
+\marginsize{2cm}{2cm}{2cm}{2cm}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{fancybox} 
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\setlength{\parindent}{0cm}
+\usepackage{subfig}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L]{ 2TV10 } 
+\fancyhead[R]{Gallegos Ruiz Diana Abigail} 
+
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour!19},   
+	commentstyle=\color{codegreen},
+	morecomment=[l]{;},
+	keywordstyle=\color{blue},
+	morekeywords={ out,ldi,lsr,rcall,brne,dec,nop,rjmp, ORG, .def,.include,in,breq,cpi,ret},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color[rgb]{0.639,0.082,0.082}\ttfamily,
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+
+\lstset{style=mystyle}
+
+
+\title{Muestro}
+\author{Gallegos Ruiz Diana Abigail}
+
+\begin{document}
+	\begin{center}
+		\Huge\textbf{Técnicas de sincronización}
+	\end{center}
+	\input{8}
+	
+\end{document}

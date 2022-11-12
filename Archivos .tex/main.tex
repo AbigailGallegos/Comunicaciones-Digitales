@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+%\documentclass{IEEEtran} 
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{fancybox} 
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\setlength{\parindent}{0cm}
+\usepackage{subfig}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+
+
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour!19},   
+	commentstyle=\color{codegreen},
+	morecomment=[l]{;},
+	keywordstyle=\color{blue},
+	morekeywords={ out,ldi,lsr,rcall,brne,dec,nop,rjmp, ORG, .def,.include,in,breq,cpi,ret},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color[rgb]{0.639,0.082,0.082}\ttfamily,
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{emph={%  
+		NOT,NULL,inner join, in, ;%
+	},emphstyle={\color{gray!50}}%
+}
+
+\lstset{emph={%  
+		SUM, COUNT, count, AVG %
+	},emphstyle={\color{codepurple}}%
+}
+
+\lstset{style=mystyle}
+
+\begin{document}
+	%\maketitle
+	\input{5}
+	
+\end{document}

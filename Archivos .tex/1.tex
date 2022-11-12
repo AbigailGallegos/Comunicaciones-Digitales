@@ -1,0 +1,57 @@
+\textbf{1. Define modulación de señales
+} \\
+
+La modulación se utiliza para desplazar el espectro deuna señal. El proceso de modulación está diseñado para "imprimir"la señal de información sobre la onda que se va a transmitir.\\
+
+\textbf{2. Diferencia entre contenido espectral y respuesta en frecuencia}\\
+
+Contendido espectral se refiere a la gráfica de los coeficientes complejos de Fourier en función de la frecuencia para la señal f(t).
+ Respuesta en frecuencia: Si $h(t)$ es la respuesta al impulso de un sistema , la función: \\
+ \begin{equation}
+ 	H(f) = \int_{-\infty}^{+\infty} h(t)e^{-j2  \pi ft}dt 
+ \end{equation} se conoce como respuesta en frecuencia o característica de la frecuenca de un sistema LTI. En 
+En general, $H (f)$es una función compleja que puede describirse por su magnitud $ |H (f)|$
+y la fase $ \angle H(f)$. La función $H(f)$, o equivalentemente h(t), es la única información
+necesaria para encontrar la salida de un sistema LTI para una entrada periódica dada.\\
+
+\textbf{3. ¿Qué significa la correlación de señales?}\\
+
+Es una operación que permite comparar que tan iguales o diferentes son las señales. \\
+
+\textbf{4. Requisitos para evaluar la convolución en un sistema}\\ Que no sean señales periódicas, la convolución de $u(t)*u(-t)$ no existe.\\
+
+\textbf{5.Diferencia entre ancho de banda y banda de paso}\\
+
+Ancho de banda: banda que contiene frecuencia de las señales, es una medida de rapidez con que pueden cambiar porciones portadoras de información.\\
+
+Banda de paso: es la gama de frecuencias o longitudes de onda que pueden pasar a través de un filtro sin ser atenuadas. Si el espectro de frecuencia de una señal se localiza alrededor de una frecuencia $fc >> 0$ Hz, se dice que la señal es pasa banda.\\
+
+\textbf{6.Escribir analíticamente la función del gráfico}\\
+Considerando el peridodo de la señal
+\begin{equation}
+	f(\tau) = A \cos (\tau-\frac{t2-t_1}{2})
+\end{equation}
+\textbf{7. Explicar el significado de variable aleatoria} \\
+
+Es la relación que asigna a un número real a cada posible resultado de un experimento.\\
+
+\textbf{8. Diferencia entre función de densidad de probabilidad y función de distribución de probabilidad} \\
+
+Se define la función de probabilidad de la variable aleatoria $X$ como la que asocia una probabilidad $p_i$ a cada valor posible de  $X(x_1,x_2,\cdots,x_n)$. Respecto a las probabilidades, se cumple siempre que: \\
+$0 \leq p_i \leq 1$ \\
+$p_1+p_2+p_3+\cdots + p_n = \sum_i p_i =1$ \\
+
+Mientras que una función de distribución de probabilidad es  la probabilidad de que la variable tome valores iguales o inferiores a x: \\
+$F(x)=p(X\leq x)$ \\
+
+\textbf{9. ¿Qué es ruido aditivo? } \\
+
+Este ruido es de naturaleza aditiva, es decir, sólo se añade con la señal de entrada.\\
+
+\textbf{10. De dos señales senoidales con la misma amplitud, una con frecuencia de 2 MHz y otra con frecuencia de 500 kHz, ¿Cuál tiene más potencia? ¿Por qué?} \\
+
+Las dos tienen la misma potencia ya que esta se calcula mediante: 
+\begin{equation}
+ P = \frac{A^2}{2} \ [W]
+\end{equation}
+

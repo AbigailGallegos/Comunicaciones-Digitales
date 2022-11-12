@@ -1,0 +1,254 @@
+
+Para la señal:
+\begin{equation}
+	f_1(t)= \sin (2\pi \ 10 t)
+\end{equation}
+
+Se obtuvieron las siguientes gráficas:
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.4]{img2/11.png}
+	\caption{$f_s= 100 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.4]{img2/12.png}
+	\caption{$f_s= 35 Hz$}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/13.png}
+	\caption{$f_s= 30 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/14.png}
+	\caption{$f_s= 25 Hz$}
+\end{figure}
+ 
+ \newpage
+ 
+ \begin{figure}[!htbp]
+ 	\centering
+ 	\includegraphics[scale=0.5]{img2/15.png}
+ 	\caption{$f_s= 20 Hz$}
+ \end{figure}
+ 
+ \begin{figure}[!htbp]
+ 	\centering
+ 	\includegraphics[scale=0.5]{img2/16.png}
+ 	\caption{$f_s= 15 Hz$}
+ \end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.9]{img2/17.png}
+	\caption{$f_s= 10 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/18.png}
+	\caption{$f_s= 8 Hz$}
+\end{figure}
+
+
+\newpage
+
+Para la señal:
+\begin{equation}
+	f_1(t)= \sin (2\pi \ 30 t)
+\end{equation}
+
+Se obtuvieron las siguientes gráficas:
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.4]{img2/21.png}
+	\caption{$f_s= 100 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.4]{img2/22.png}
+	\caption{$f_s= 35 Hz$}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/23.png}
+	\caption{$f_s= 30 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/24.png}
+	\caption{$f_s= 25 Hz$}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/25.png}
+	\caption{$f_s= 20 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/26.png}
+	\caption{$f_s= 15 Hz$}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/27.png}
+	\caption{$f_s= 10 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/28.png}
+	\caption{$f_s= 8 Hz$}
+\end{figure}
+
+\newpage
+
+Para la señal:
+\begin{equation}
+	f_1(t)= \sin (2\pi \ 30 t)
+\end{equation}
+
+Se obtuvieron las siguientes gráficas:
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.4]{img2/31.png}
+	\caption{$f_s= 100 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.4]{img2/32.png}
+	\caption{$f_s= 35 Hz$}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/33.png}
+	\caption{$f_s= 30 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/34.png}
+	\caption{$f_s= 25 Hz$}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/35.png}
+	\caption{$f_s= 20 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/36.png}
+	\caption{$f_s= 15 Hz$}
+\end{figure}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/37.png}
+	\caption{$f_s= 10 Hz$}
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{img2/38.png}
+	\caption{$f_s= 8 Hz$}
+\end{figure}
+
+\newpage
+
+Código:
+
+\begin{lstlisting}[language=Matlab]
+	close all
+	clear all 
+	
+	%Tiempo
+	ts=[1/100 , 1/35 , 1/30 , 1/25 , 1/20 , 1/15 , 1/10 , 1/8];
+	n=800;
+	
+	for i=1:length(ts)
+	t=0.0001:ts(i):2;
+	
+	
+	%SENALES MUESTREADAS 
+	
+	%f1= sin(2*pi*10*t); %Tiempo continuo
+	%f1= sin(2*pi*20*t); 
+	f1= sin(2*pi*30*t);
+	
+	
+	% TRANSFORMADA DE FOURIER DE LAS SENALES
+	
+	F1=0;
+	%F2=0;
+	%F3=0;
+	
+	F1=fft(f1,1/ts(i));
+	
+	invFI=ifft(F1);
+	w= linspace(-25*pi,25*pi,1/ts(i));
+	
+	figure(i)
+	tiledlayout('flow')
+	% Top plot
+	nexttile
+	plot(t,f1)
+	title(strcat('f(t) con ts=',num2str(ts(i))))
+	grid on
+	xlabel('t [s]')
+	
+	% Bottom plot
+	nexttile
+	plot(w/(2*pi),abs(F1))
+	title('Transformada de Fourier')
+	grid on
+	xlabel('w [Hz]')
+	
+	t=linspace(0.0001,2,1/ts(i));
+	% Top plot
+	nexttile
+	plot(t,invFI)
+	title('Senal recuperada')
+	grid on
+	xlabel('t [s]')
+	end
+	
+\end{lstlisting}
+
+
+ 
+
+

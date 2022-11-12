@@ -1,0 +1,53 @@
+\begin{center}
+	\LARGE\bfseries Ley A
+\end{center}
+
+La característica de compresión recomendada por el UIT-T para Europa y la mayor parte del
+resto del mundo se denomina característica  \textbf{Ley A}. Esta característica tiene las mismas
+características básicas y ventajas de implementación que la característica p-law.
+
+La relación $\frac{input}{p} -\frac{output}{p}$,o lallamada caracterpistica de comprensión está dada por:
+
+
+\begin{equation}
+	F_A(x)= \left\lbrace \begin{array}{ll}
+			sgn(x)\left[ \frac{A|x|}{1+\ln(A)}\right] & 0 \leq |x| < \frac{1}{A}\\
+			 	sgn(x)\left[ \frac{1+ \ln(A|x|)}{1+\ln(A)}\right] &  \frac{1}{A} \leq |x| < 1\\
+		\end{array}
+	\right.
+\end{equation}
+
+
+Y la inversa o característica de expansión por:
+
+\begin{equation}
+	F^{-1}_A(y)= \left\lbrace \begin{array}{ll}
+		sgn(y)\left[ \frac{|y|+[1+\ln(A)]}{A}\right] & 0 \leq |y| < \frac{1}{1+\ln(A)}\\
+		sgn(y)\left[ \frac{1+ \ln(A|x|)}{1+\ln(A)}\right] &  \frac{1}{A} \leq |x| < 1\\
+	\end{array}
+	\right.
+\end{equation}
+
+Cuando $A=1$ no hay compresión.
+
+ La primera porción de la característica de la ley A es lineal por definición. \\
+ 
+ En total, hay ocho
+ segmentos positivos y ocho negativos. Los dos primeros segmentos de cada polaridad (cuatro en
+ en total) son colineales y, por lo tanto, a veces se consideran como un segmento recto.
+ Por lo tanto, la aproximación segmentada de la característica de la ley A se denomina a veces
+ como una "aproximación de 13 segmentos". \\
+ 
+ Cuanto más grande es el valor de A, mayor es la compresión. y la característica linear se desplaza a la derecha. \\
+ 
+ La señal de entrada está acotada en $[0,1]$.
+ 
+ \begin{figure}[!htbp]
+ 	\subfloat{
+ 	\includegraphics[height=7cm]{Tareas/Alaw.png}	
+ 	}
+ \subfloat{\includegraphics[height=7cm]{Tareas/alawpro}}
+ \end{figure}
+ 
+ 
+

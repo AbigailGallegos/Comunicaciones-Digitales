@@ -1,0 +1,52 @@
+
+\textbf{Código}:
+\begin{lstlisting}[language=Matlab]
+	close all 
+	clear all
+	
+	filename = 'OSR_us_000_0016_8k.wav';
+	[y,Fs] = audioread(filename);
+	ts=1/Fs;
+	SQR=30;
+	
+	y = y(:,1);
+	t = 0:ts:(length(y)*ts)-ts;
+	
+	figure(1)
+	plot(t,y); 
+	xlabel('Segundos'); 
+	ylabel('Amplitud');
+	
+	S = bandpower(y);
+	
+	
+	p=1:16;
+	
+	IDS=max(y)+abs(min(y));
+	IDQ=2.^p;
+	
+	q=IDS./IDQ;
+	
+	%SQR=10*log10(6)+20*log10(IDS./q);
+	SQR=10*log10((6*IDS^2)./q.^2);
+	
+	qn=y/q(1);
+	
+	hold on
+	
+	plot(t,qn); 
+	
+	
+	
+	[p' SQR']
+	
+
+\end{lstlisting}
+
+ \begin{figure}[!htbp]
+ 	\centering
+	\subfloat[Tabla $\rho$ vs SQR]{
+		\includegraphics[height=8cm]{Tareas/1table.png}	
+	}\\
+	\subfloat[]{\includegraphics[height=8cm]{Tareas/2.png}}
+\end{figure}

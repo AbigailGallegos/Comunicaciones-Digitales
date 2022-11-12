@@ -1,0 +1,52 @@
+\begin{center}
+	\LARGE{\textbf{Tarea 3}} \\
+	Gallegos Ruiz Diana Abigail
+	
+\end{center}
+
+Apartir de las ecuaciones vistas en clase:
+\begin{equation}
+	IDQ=\frac{2A}{q}
+\end{equation}
+
+\begin{equation}
+	Q=\frac{1}{12}q^2 \label{dos}
+\end{equation}
+
+Se despejó el intervalo de cuantificación a partir de la ec \ref{dos}.
+
+\begin{equation*}
+	q^2=\frac{6A^2}{SQR}
+\end{equation*}
+
+\begin{equation*}
+	q=\sqrt{\frac{6A^2}{SQR}}
+\end{equation*}
+ 
+ El código que se utilizó para resolver el ejercicio fue:
+ \vspace{1cm}
+ 
+\lstinputlisting[language=Matlab]{Tareas/Tarea3.m}
+
+\newpage
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.5]{Tareas/ultima.png}
+	\caption{Señal en el dominio del tiempo}
+\end{figure}
+
+De donde
+
+La potencia promedio y el IDQ resultaron:
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.3]{Tareas/promedio.png}
+	\caption{Señal en el dominio del tiempo}
+\end{figure}
+
+Por lo tanto se requieren de 3 bits para cuantificar la señal sin sobrecargar el IDQ y el valor promedio fue de $P_m=0.0011 W$.
+
+
+	
+
